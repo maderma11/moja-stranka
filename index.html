@@ -11,12 +11,26 @@
     <h1 id="pozdrav"></h1>
     <p id="cas"></p>
 
-    <h2>Môj zoznam úloh</h2>
+    <!-- FOTKA -->
+    <img src="obrazky/foto.jpg" alt="Popis fotky" class="foto">
+
+    <h2>Moje úlohy</h2>
     <div class="formular">
       <input type="text" id="novaUloha" placeholder="Napíš úlohu...">
       <button id="pridatBtn">Pridať</button>
     </div>
     <ul id="zoznam"></ul>
+
+    <!-- HRA -->
+    <h2>Kameň, papier, nožnice</h2>
+    <div class="hra">
+      <button class="volba" data-volba="kamen">🪨 Kameň</button>
+      <button class="volba" data-volba="papier">📄 Papier</button>
+      <button class="volba" data-volba="noznice">✂️ Nožnice</button>
+    </div>
+    <p id="vysledok">Vyber si!</p>
+    <p>Skóre – Ty: <strong id="skoreTy">0</strong> | Počítač: <strong id="skorePc">0</strong></p>
+    <button id="resetBtn">Vynulovať skóre</button>
   </main>
 
   <script src="script.js"></script>
